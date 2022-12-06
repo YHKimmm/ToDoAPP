@@ -1,0 +1,152 @@
+body{
+    background-image: url(image/spring-summer-season-abstract-nature-background-grass-blue-sky-back-49716369.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+}
+.container{
+    background-color: white;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-top: 10px solid blanchedalmond;
+    border-bottom: 10px solid blanchedalmond;
+    max-width: 800px ;
+}
+
+.mini-container{
+    border: 7px solid lightcyan;
+    min-height: 100vh;
+}
+
+.tabs{
+    position: relative;
+    display: flex;
+    border-bottom: 7px solid lightcyan;;
+}
+
+.tabs div{
+    padding: 1em;
+    cursor: pointer;
+}
+
+.input-area{
+    position: relative;
+}
+
+.task-input{
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 70%;
+    border: none;
+    border: 5px solid blanchedalmond;
+}
+
+.task-input:focus {
+    outline: none;
+    border-bottom: 3px solid blanchedalmond;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    transition: 0.5s;
+    padding-top: 35px;
+}
+
+.task-input+label>span {
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    color: #8f8f8f;
+    font-size: 14px;
+    top: 8px;
+    left: 10px;
+    -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+    transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.task-input:focus+label>span {
+    top: 0px;
+    color: #333;
+}
+
+.add-button{
+    background-color: white;
+    border: none;
+    color: brown;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    height: 6vh;
+    
+}
+
+.tasks div{
+    margin-top: 1em;
+}
+
+.task{
+    position: absolute;
+    margin-left: 1em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.buttons button{
+    height: 100%;
+}
+
+.button{
+    background: none;
+    border: none;
+    margin-right: 1em;
+}
+
+.check-button{
+    margin-right: 3em;
+    color: #63bd53;
+}
+
+.check-button:hover{
+    background-color: greenyellow;
+}
+
+.delete-button{
+    color: rgb(236, 8, 7);
+}
+
+.delete-button:hover{
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+#underline{
+    background-color: pink;
+    width: 48px;
+    position: absolute;
+    top: 58px;
+    height: 4px;
+    padding: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.fa-rotate-left{
+    color: grey;
+}
+
+
+.task-done{
+    background-color: lightgray;
+    width: 60%;
+    text-decoration: line-through;
+    transition: 0.5s;
+}
